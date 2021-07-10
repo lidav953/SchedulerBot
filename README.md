@@ -23,6 +23,8 @@ Send event reminders.
 ```
 pip install -r requirements.txt
 ```
+
+3. You'll also need a an authentication token. Create a file secret.py and store your token in the variable AUTH_TOKEN.
 --->
 
 ## Authors
