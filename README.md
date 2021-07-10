@@ -14,18 +14,22 @@ Send event reminders.
 
 ## Usage
 
-<!---
-## To Modify the Back-End
+1. Download and install Python (Version 3.5.3 or later) & pip. 
 
-1. Download and install Python & pip. 
+2. Clone the repository:
+```
+git clone https://github.com/lidav953/SchedulerBot.git
+```
 
-2. Download and install the required modules by running the following script:
+3. Download and install the required modules by running the following script:
 ```
 pip install -r requirements.txt
 ```
 
-3. You'll also need a an authentication token. Create a file secret.py and store your token in the variable AUTH_TOKEN.
---->
+4. Create a Discord Developer Application at https://discordapp.com/developers/applications. Add a bot to the application and copy its Authentication Token. Create a file secret.py and store the Token in the variable AUTH_TOKEN:
+```
+AUTH_TOKEN = '(your token here)'
+```
 
 ## Authors
 
