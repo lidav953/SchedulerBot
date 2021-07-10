@@ -5,8 +5,11 @@ SchedulerBot automatically schedules and manages events for your discord server.
 ## Features
 
 Create & delete events with a time & name.
+
 Invite everyone, specific roles, or specific people to each event.
+
 Manage invites, acceptances, or declines for each event.
+
 Send event reminders.
 
 ## Usage
