@@ -1,6 +1,6 @@
 # SchedulerBot
 
-SchedulerBot automatically schedules and manages events for your discord server.
+SchedulerBot is a simple bot that automatically schedules and manages events for your discord server.
 
 ## Features
 
