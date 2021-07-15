@@ -2,7 +2,7 @@ from secret import *
 import discord
 import requests
 import json
-import bot
+import tinydb
 
 class SchedulerBot(discord.Client):
     def __init__(self, AUTH_TOKEN):

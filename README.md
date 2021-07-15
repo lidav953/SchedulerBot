@@ -1,6 +1,6 @@
 # SchedulerBot
 
-SchedulerBot is a simple bot that automatically schedules and manages events for your discord server.
+SchedulerBot is a simple bot that schedules and manages events for your discord server.
 
 ## Features
 
@@ -26,9 +26,11 @@ git clone https://github.com/lidav953/SchedulerBot.git
 pip install -r requirements.txt
 ```
 
-4. Create a Discord Developer Application at https://discordapp.com/developers/applications. Add a bot to the application and copy its Authentication Token. Create a file secret.py and store the Token in the variable AUTH_TOKEN:
+4. Create a Discord Developer Application at https://discordapp.com/developers/applications. Add a bot to the application and copy its Authentication Token. Create a file secret.py and store the Token in the variable AUTH_TOKEN: AUTH_TOKEN = 'your token here'
+
+5. Run the bot:
 ```
-AUTH_TOKEN = '(your token here)'
+python main.py
 ```
 
 ## Authors
