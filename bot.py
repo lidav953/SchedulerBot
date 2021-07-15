@@ -1,7 +1,8 @@
 from secret import *
 import discord
 import json
-from datetime import datetime, timedelta
+import datetime
+import pytz
 from tinydb import TinyDB, Query
 
 class SchedulerBot(discord.Client):
@@ -18,8 +19,8 @@ class SchedulerBot(discord.Client):
     
     #Initializes and runs the bot
     def run(self):
-        print('running')
-        super(SchedulerBot, self).run(self.auth_token) 
+        print('Initializing')
+        super(SchedulerBot, self).run(self.auth_token)
     
     #Creates an event and inserts it into the events database
     def create_event(self, name, creator, event_time, description):
