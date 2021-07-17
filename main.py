@@ -22,27 +22,36 @@ async def on_message(msg):
 
     if (' ' not in msg.content):
         #listevents, deleteallevents
+
         command = msg.content
 
         if command == '!listevents':
-            reply = 'Current events:\n' + bot.list_events()
+            reply = bot.list_events()
 
         elif command == '!deleteallevents':
             reply = bot.delete_all_events()
     
     else:
-        #createevent
+        #createevent, findevent
+
         msgparts=msg.content.split(' ', 1)
         command = msgparts[0]
-        info = msgparts[1]
+        fields = msgparts[1].split(', ')
 
         if command == '!createevent':
             #fields = name, time in bot's local time (%m/%d/%y %I:%M%p), description
-            fields = info.split(', ')
             event_name = fields[0]
             event_time = fields[1]
             event_description = fields[2]
             reply = bot.create_event(event_name, msg.author.name, event_time, event_description)
+        
+        elif command == '!findevent':
+            #fields = 'name'/'creator', name/creator
+            reply = bot.list_events(fields[0], fields[1])
+        
+        elif command == '!deleteevent':
+            #fields = 'name'/'creator', name/creator
+            reply = bot.delete_event(fields[0], fields[1])
 
     await msg.channel.send(reply)
     print(reply)
